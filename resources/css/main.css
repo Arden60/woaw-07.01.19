@@ -137,6 +137,21 @@ header .layout-wide {
       }
 
       
+      .logo {
+        max-width: 80px;
+        width: 100%;
+        }
+      
+        .site-title {
+        font-family: var(--font-heading);
+        font-size: var(--font-size-site-title);
+        color: var(--alternative-text-color);
+
+        width: 80%;
+        float: right;
+        text-align: right;
+        }
+
 /* -------------------- NAVIGATION */
 
 
@@ -144,8 +159,20 @@ header .layout-wide {
 /* -------------------- FOOTER */
 
 footer {
-    background-color: #084e3f;
-    }
+    background-color: var(--alternative-bg-color);
+  }
+  
+  .footer-subscribe {
+    background-color: var(--secondary-bg-color);
+    padding-top: var(--spacer-large);
+    padding-bottom: var(--spacer-large);
+    text-align: center;
+  }
+  
+  .footer-notices {
+    padding-top: var(--spacer);
+    padding-bottom: var(--spacer);
+  }
 
 /* -------------------- FORMS */
 
