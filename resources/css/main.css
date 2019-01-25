@@ -1,12 +1,11 @@
-
+@import url('https://fonts.googleapis.com/css?family=Lilita+One|Raleway');
 
 /* -------------------- VARIABLES */
 
 :root {
+    --font-default: Raleway, sans-serif;
 
-    --font-default: Ariel, sans-serif;
-
-    --font-heading: Times New Roman, cursive;
+    --font-heading: "Lilita One", cursive;
 
       /* Colors */
   --color-green: #084e3f;
@@ -26,7 +25,6 @@
   --secondary-bg-color: var(--color-almost-white);
   --alternative-bg-color: var(--color-green);
 
-
  /* measurements*/
   --padder: 3%;
   --spacer: 20px;
@@ -44,7 +42,14 @@
 
 }
 
-
+@media screen and (min-width: 800px) {
+    :root {
+      --font-size-site-title: 54px;
+      --font-size-page-title: 80px;
+      --font-size-section-title: 48px;
+  
+      --padder: 2%;
+    }
 
 /* -------------------- GLOBAL DEFAULTS */
 
@@ -94,6 +99,14 @@ h1 {
     font-size: var(--font-size-sub-title);
   }
 
+  a {
+    color: var(--error-color);
+    transition: var(--transition-time);
+  }
+  
+  a:hover {
+    color: var(--strong-text-color);
+  }
   
 
 /* -------------------- LAYOUTS */
