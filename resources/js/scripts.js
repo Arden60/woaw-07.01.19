@@ -31,5 +31,21 @@ $('.nav-prompt').click(function() {
 })
 
   
-//nav active class
 
+// nav active class function
+
+function activeMenu() {
+    
+    var url = window.location.href;
+
+    $('.nav-inner a').filter(function() {
+
+    return this.href == url;
+
+    }).addClass('active');
+
+    }
+
+    // now run the function
+
+    activeMenu();
