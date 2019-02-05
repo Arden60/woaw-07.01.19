@@ -372,7 +372,35 @@ label {
 }
 
 
+  /* image gallery */
+.image-gallery ul {
 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+
+}
+
+.image-gallery li {
+  float: left; 
+  max-width: 250px;
+  margin: 10px;
+}
+
+
+.image-gallery a img {
+  filter: grayscale(70%);
+  transition: var(--transition-time);
+  box-shadow: 0px 1px 10px var(--strong-text-color);
+
+}
+
+.image-gallery a:hover img {
+  transform: scale(1.1);
+  filter: unset;
+}
 
 
 

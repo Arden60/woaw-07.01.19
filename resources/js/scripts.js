@@ -51,4 +51,18 @@ function activeMenu() {
     activeMenu();
 
 
-    
+    // image gallery
+function imageGallery() {
+    if (!$(".image-gallery").length) {
+    return;
+    /* this means that the page is looking for something with a class of 'image-gallery'
+    If it can't find one, it 'returns', which means it does nothing.
+    If it DOES find such a class (like on our media page), then it will carry on and read the line below.
+    Without these lines above, this script would cause an error on pages without a gallery.
+    */
+    }
+    $(".image-gallery a").simpleLightbox();
+    // this says to run the script on all <a> tags inside .image-gallery
+    }
+    imageGallery(); // this says to invoke the script and make it run.
+
