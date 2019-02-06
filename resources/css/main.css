@@ -432,12 +432,13 @@ main {
 }
 
 .logo-wrapper a:hover img {
+  /* animation: spin 0.5s linear ; */
   animation-name: spin;
   animation-duration: 1s;
 
-  animation-iteration-count: infinite;
+  animation-iteration-count: infinite;   /* we could probably leave this out, or set to 1 */
 
-  animation-timing-function: linear;
+  animation-timing-function: linear;  /* smooth - no easing in or out */
 
 }
 
