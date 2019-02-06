@@ -72,8 +72,8 @@
   }
   
   iframe {
-    max-width: 100%;
-  }
+    max-width: 100%;    /* makes sure that iframe doesn't bust out of the page */
+  }     
   
   
 
